@@ -1,0 +1,44 @@
+{% extends 'bus_oner/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-8">
+               <div class="card">
+                   <div class="row">
+                        <div class="col-lg-4">
+                            <img src=" " alt="">
+                        </div>
+                       <div class="col-lg-8">
+                           <table class="table">
+                               <tr>
+                                   <td>Name</td>
+                                   <td>{{ oner.0.name }}</td>
+                               </tr>
+                               <tr>
+                                   <td>Email</td>
+                                   <td>{{ oner.0.email }}</td>
+                               </tr>
+                               <tr>
+                                   <td>Contact</td>
+                                   <td>{{ oner.0.contact }}</td>
+                               </tr>
+                               <tr>
+                                   <td>Address</td>
+                                   <td>{{ oner.0.address }}</td>
+                               </tr>
+                               <tr>
+                                   <td>City</td>
+                                   <td>{{ oner.0.city }}</td>
+                               </tr>
+                           </table>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+
+
+{% endblock %}

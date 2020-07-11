@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+
+{% block navbar %}
+{% block navbar1 %}
+   {{ block.super }}
+{% endblock %}
+{% endblock %}
+
+{% block content %}
+    {% load static  %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{% static 'india (2).png' %}" alt="" height="350">
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'user_login' %}" class="btn btn-danger btn-block"> click for  Titak  booking </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron bg-white">
+        <h1 class="display-3 text-center mb-4 ">We'll Take You Places!</h1>
+        <p class="text-center">We are redBus - world's largest online bus-ticketing organization. At redBus, you can check schedules, select your favorite bus, view the seat layout, pay and get your bus ticket - All with a few clicks of your mouse or a few taps on your phone! redBus has over 8 million happy customers and has sold more than 75 million tickets globally! Book with us for a quick and hassle-free bus booking experience!</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+              <div class="card-header mx-auto mt-3">
+                  <img src="{% static 'firs.png' %}">
+              </div>
+              <div class="card-body mt-3">
+                  <h3 class="text-center">ZERO CONVENIENCE FEE</h3>
+                  <p class="text-center">Book your bus tickets at best price</p>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header mx-auto mt-3">
+                <img src="{% static 'sed.png' %}">
+            </div>
+            <div class="card-body mt-3">
+            <h3 class="text-center">CHOOSE YOUR PREFERRED SEAT</h3>
+            <p class="text-center">Book the seats of your choice</p>
+            </div>
+          </div>
+        </div> 
+
+        <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header mx-auto mt-3">
+                <img src="{% static 'thrd.png' %}">
+            </div>
+            <div class="card-body mt-3">
+             <h3 class="text-center">SECURE PAYMENTS</h3>
+            <p class="text-center">Pay for your ticket online in a secure and safe way</p>
+            </div>
+           </div>
+        </div>
+    </div>
+</div><br>
+
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-white ml-5 mt-2">About Us</h3>
+
+        </div>
+
+        <div class="col-lg-4">
+             <h3 class="ml-5 mt-2 text-white">Registation Bus</h3><br>
+             <a href="{% url 'oner_login' %}" class="btn btn-primary ml-5">Login Bus Operator</a><br><br>
+             <a href="{% url 'oner_signup' %}" class="btn btn-primary ml-4">Bus Operator Registration</a><br><br>
+
+        </div>
+         <div class="col-lg-4">
+             <h3 class="text-white ml-2">About Bus</h3>
+             <h2 class="text-white "> Bus logo</h2>
+        </div>
+      </div>
+    </div><br><br>
+
+{% endblock %}

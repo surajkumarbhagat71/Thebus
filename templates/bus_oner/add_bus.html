@@ -1,0 +1,24 @@
+{% extends 'bus_oner/base.html' %}
+
+{% block side %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-6">
+               <form action="" method="" >
+                   {% csrf_token %}
+                   <table class="table">
+                       {{ busform }}
+                   </table>
+                   <div class="form-group">
+                       <input type="submit" value="Add" class="btn-primary btn form-control">
+                   </div>
+               </form>
+           </div>
+       </div>
+    </div>
+
+{% endblock %}
